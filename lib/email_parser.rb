@@ -7,7 +7,7 @@ class EmailAddressParser
   
   def parse(email_addresses)
     split_emails = @email_addresses.split(/ |, |,/)
-    searchunique(split_emails)
+    split_emails.uniq{|emails| emails.1}
     
   end 
   def split_emails
