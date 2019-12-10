@@ -5,15 +5,13 @@
 class EmailAddressParser 
   attr_accessor :email_addresses
   
-  def parse(email_addresses)
-    split_emails = @email_addresses.split(/ |, |,/)
-    split_emails.uniq{|emails| emails.1}
-    
+  def initialize(email)
+    @email = email 
   end 
-  def split_emails
-    split_emails.find do 
-end
-
+  def parse
+    email.delete(',').split.uniq
+  end 
+end 
 
 
 
