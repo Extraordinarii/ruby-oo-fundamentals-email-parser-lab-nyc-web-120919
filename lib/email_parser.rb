@@ -13,21 +13,3 @@ class EmailAddressParser
   end 
 end 
 
-
-
-
-
-
-
-=begin prototype 
-def searchunique(split_emails)
-
-    l = 0 
-    while l<split_emails.length do 
-    i = 0 
-      while i<split_emails.length do 
-      if split_emails[l]== split_emails[i]
-        
-    end 
-    l += 1 
-  end 
